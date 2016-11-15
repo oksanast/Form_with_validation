@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Page with JS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<meta charset="utf-8">
+</head>
+<body>
+
+
+	<form id="registration">
+		<ul>
+
+    		<li>
+    		<label>Full Name <span class="required">*</span></label>
+				<input type="text" id="firstname" class="field-divided" placeholder="First" required >
+				<input type="text" id="lastname" class="field-divided" placeholder="Last" required>
+    		</li>
+
+    		<li id="li_pesel">
+    		<label>PESEL</label>
+    		<input type="text" class="field-long" id="pesel" name="pesel" placeholder="12334556789">
+    		</li>
+
+			<li>
+        	<label>Sex</label>
+        	<input type="radio" name="sex" value="Female">Female
+        	<input type="radio" name="sex" value="Male">Male
+    		</li>
+
+    		<li id="li_birthdate">
+        	<label>Birthdate</label>
+        	<input type="date" id="birthdate" name="birthdate" class="field-long">
+    		</li>
+
+    		<li id="li_login">
+        	<label>Login <span class="required">*</span></label>
+        	<input type="text" id="login" name="login" class="field-long" required>
+			</li>
+
+    		<li id="li_password">
+        	<label>Password <span class="required">*</span></label>
+        	<input type="password" id="password" name="password" class="field-long" required >
+    		</li>
+
+    		<li id="li_confirm_password">
+        	<label>Confirm password <span class="required">*</span></label>
+        	<input type="password" id="confirm_password" name="confirn_password" class="field-long" required>
+    		</li>
+
+    		<li>
+        	<label>Photo <span class="required">*</span></label>
+        	<input type="file" name="photo" class="field-long" accept="image/*" required>
+    		</li>
+
+    		<li id="li_submit">
+        	<input type="button" id="Submit" value="Submit">
+    		</li>
+
+			</ul>
+	</form>
+	<script type="text/javascript" src="form.js"></script>
+
+</body>
+</html>
